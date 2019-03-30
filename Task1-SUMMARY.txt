@@ -1,0 +1,29 @@
+Description:
+Task 1 is about assigning a session ID to each record in the clickStream dataset.
+The distinctions in session ID should be observed when there is a duration of inactivity of 15 minutes.
+I've used MD5hash to generate the SessionIDs
+
+
+Techincalities:
+Script Execution Time:
+5.7 seconds
+
+Data Structures Used:
+Three Lists are used,
+1. A list to store the sessionIDs that will later be assigned to the 'sessionID' column in the dataset
+2. A list to store the clicked_epochs. This is used for testing the 15 minute inactivity window condition
+3. A list to store the unique session IDs 
+
+Time Complexity:
+Since a session ID is being assigned to every record, the time complexity just depends on the number of records(N)
+i.e T-> O(N) where N->Number of records
+
+Space Complexity:
+Three lists all depending on the number of sessions,
+i.e T->O(N) at worst case (if each record has a different uuid)
+
+
+Visualizations:
+No Visualizations used.
+
+

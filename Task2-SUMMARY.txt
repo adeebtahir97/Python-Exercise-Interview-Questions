@@ -1,0 +1,53 @@
+Description:
+Task 2 is about taking the transaction data and finding seasonal trends.
+I've taken the seasons as the months in each year.
+For Isolating Trends, I've created a trend precedent(atleast 25 purchases for establishing a trend.)
+
+Findings:
+All Visualizations are stored in the Visualizations Folder that gets created when the script runs.
+
+For Casual Dresses,
+in 2017:
+There is a rapid burst in purchase behaviour in successive months of October,November and December. The products purchased almost tripled in the span of three months(13 in October, 23 in November and 40 in December)
+in 2018:
+Purchase count triples in the month ranges (3-5) and (8-9)
+
+For Fleece Jacket,
+Its only prefered during August 2018 and this category shows only 2 products(124582 and 241115) as equally likely purchased.
+
+For Pullover Sweaters,
+in 2017:
+there is a purchase doubling from October to November and then relapse to normalcy which suggests a short duration of cold weather
+in 2018:
+Purchase count is high in January suggesting cold weather but drops to a sixth in February which suggests warmer climate. The next increasing trend is only seen from July which gradually nearly doubles each month till September.
+
+For Sleevless Blouse,
+in 2017:
+Small trend(Purchase behavior doubles both in number and distinct products purchased from October to November and this stays through December)
+in 2018:
+Three Trends observed:
+First is the purchase behaviour reducing by half each month from December 2017 to February 2018
+Second trend is the sudden exponential purchase increase(8 times) from April to May 2018
+Third trend is the exponential decrease(once again) in purchase behavior from May to June  
+
+
+Techincalities:
+Script Execution Time:
+16 seconds
+
+Data Structures Used:
+Dictionary (one dictionary for storing the purchase count per product in a season for a category and another dictionary to store the seasonal score for each category)
+
+Time Complexity:
+Irrespective of the number of rows in dataset, the script time just depends on the number of distinct categories,
+i.e T-> O(c) where c->distinct category count
+
+Space Complexity:
+Two dictionaries, one for the purchase count per product in a season for a category and another for seasonal score for each category
+i.e S->O(p*c + c) where p is a multiplier for products
+This reduces to O(c)
+
+Visualizations:
+I've used Pie Charts to show the purchases per category per season due to convenience.
+
+
