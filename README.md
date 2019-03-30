@@ -1,5 +1,5 @@
 # Python-Exercise-Interview-Questions
-My solutions to some of the python coding questions I've been asked in Interviews
+My solutions to some of the python coding questions I've been asked in Interviews. You have to change the datasources in the python scripts accordingly to make the scripts work.
 
 # TASKS
 
