@@ -11,7 +11,7 @@ def normalize(v,valueList):
 
 tStart = time.time()
 print('Script Started...Please Wait')
-df = pd.read_csv('transactions.csv',header=0)
+df = pd.read_csv('NameOfTransactionsDataFile.csv',header=0)
 if not os.path.isfile('./Visualizations'):
     os.mkdir('./Visualizations') 
 
