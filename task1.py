@@ -4,7 +4,7 @@ import hashlib
 import time
 
 tStart = time.time()
-df = pd.read_csv('clickStream.csv',header=0)
+df = pd.read_csv('NameOfClickStreamDataFile.csv',header=0)
 
 df['sessionID'] = df['uuid'].astype(str) + df['date'].astype(str)
 sessionIDList = df['sessionID'].tolist()
